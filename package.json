@@ -8,6 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
+    "homepage": "https://Thundercloud12.github.io/reacttutorial"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
