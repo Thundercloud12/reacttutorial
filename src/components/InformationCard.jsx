@@ -12,11 +12,18 @@ const InformationCard = ({recipe, onClose}) => {
           X
         </button>
         <div className="h-1/2">
+          <a
+        href={recipe.strYoutube}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="relative h-32"
+       >
           <img 
             className="w-full h-full object-cover"
             src={recipe.strMealThumb}
             alt="Caffe Latte" 
           />
+        </a>
         </div>
         <div className="h-1/2 p-4 overflow-auto">
           <h2 className="text-xl font-bold mb-4">{recipe.strMeal}</h2>
