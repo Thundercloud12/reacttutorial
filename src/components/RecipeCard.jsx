@@ -1,8 +1,10 @@
 import { Heart, HeartPulse, Soup } from "lucide-react";
 import { useEffect, useState } from "react";
+import InformationCard from "./InformationCard";
 
 const RecipeCard = ({ recipe, bg, badge }) => {
   const [isFavorite, setIsFavorite] = useState(false);
+  const [showinfo, setshowinfo] = useState(false);
 
   // On mount (and whenever recipe.strMeal changes), check if this recipe is in local storage favorites
   useEffect(() => {
@@ -34,6 +36,10 @@ const RecipeCard = ({ recipe, bg, badge }) => {
     localStorage.setItem("favourites", JSON.stringify(favourites));
 	
   };
+
+  const handleShowInfo = () => {
+    setshowinfo(true)
+  }
 
   return (
     <div className={`flex flex-col rounded-md ${bg} overflow-hidden p-3 relative`}>
@@ -68,6 +74,20 @@ const RecipeCard = ({ recipe, bg, badge }) => {
       <div className="flex mt-1">
         <p className="font-bold tracking-wide">{recipe?.strMeal || "hello"}</p>
       </div>
+     <button
+        onClick={handleShowInfo}
+        className="absolute bottom-0 right-3 bg-blue-300 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+      >
+        More Info
+      </button>
+
+      {/* Conditionally render the InformationCard */}
+      {showinfo && (
+        <InformationCard
+          recipe={recipe} 
+          onClose={() => setshowinfo(false)} 
+        />
+      )}
     </div>
   );
 };
