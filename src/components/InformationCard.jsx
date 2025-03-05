@@ -4,7 +4,7 @@ import SwiggyButton from './SwiggyButton'
 const InformationCard = ({recipe, onClose}) => {
   return (
  <div className="fixed inset-0 flex items-center justify-center bg-amber-100 bg-opacity-50 z-50">
-      <div className="bg-white relative max-w-md h-150 w-150">
+      <div className="bg-white relative max-w-md h-165 w-150">
         <button 
           onClick={onClose}
           className="absolute top-2 right-2 text-red-600 hover:text-gray-800 text-2xl"
