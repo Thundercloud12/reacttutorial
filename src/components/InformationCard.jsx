@@ -7,7 +7,7 @@ const InformationCard = ({recipe, onClose}) => {
       <div className="bg-white relative max-w-md h-165 w-150">
         <button 
           onClick={onClose}
-          className="absolute top-2 right-2 text-red-600 hover:text-gray-800 text-2xl"
+          className="absolute top-2 right-2 bg-white p-1 rounded-full text-red-600 hover:text-gray-800 text-2xl z-10"
         >
           X
         </button>
