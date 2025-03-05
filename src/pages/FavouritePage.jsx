@@ -12,7 +12,7 @@ const FavoritesPage = () => {
 
 				{favorites.length === 0 && (
 					<div className='h-[80vh] flex flex-col items-center gap-4'>
-						<img src='/404.svg' className='h-3/4' alt='404 svg' />
+						<img src='https://img.freepik.com/free-vector/404-error-with-landscape-concept-illustration_114360-7898.jpg' className='h-3/4' alt='404 svg' />
 					</div>
 				)}
 
