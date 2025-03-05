@@ -1,12 +1,14 @@
-# React + Vite
+📌 Overview
+Welcome to my first ReactJS-based website! Tjis website offers 150+ recipes across various categories. Users can explore recipes, watch video guides on how to make it, read about it and even order it through swiggy(if you want to savor it right now!!!)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Features
+🌟 150+ Recipes across multiple categories
+📌 Top 5 Recipes of the Day section
+🔍 Recipe Cards with detailed instructions
+🍱 You can even order it via swiggy through recipe cards!!
+⚡ Fast and Dynamic UI powered by ReactJS
+🛠️ Technologies Used
+ReactJS - Frontend framework
+React Router - For navigation
+TailwindCSS and lucide-react - Styling
+API / JSON Data - Recipe storage and retrieval
