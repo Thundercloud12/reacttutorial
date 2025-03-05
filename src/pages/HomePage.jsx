@@ -42,7 +42,7 @@ const HomePage = () => {
   }
 
   useEffect(() => {
-    fetchRecipes("chicken")
+    fetchRecipes("cake")
   }, [])
 
   const handleSearchRecipe = (e) => {
